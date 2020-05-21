@@ -10,6 +10,7 @@ import keras
 from keras.models import Sequential
 from keras.layers import Dense
 classificador = Sequential()
+
 classificador.add(Dense(units = 16, activation = 'relu', 
                         kernel_initializer = 'random_uniform', input_dim = 30))
 classificador.add(Dense(units = 16, activation = 'relu', 
