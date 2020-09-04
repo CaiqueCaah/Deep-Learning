@@ -30,6 +30,7 @@ classificador.fit(previsores_treinamento, classe_treinamento, batch_size = 10,
 resultado = classificador.evaluate(previsores_teste, classe_teste)
 previsoes = classificador.predict(previsores_teste)
 previsoes = (previsoes > 0.5)
+
 import numpy as np
 classe_teste2 = [np.argmax(t) for t in classe_teste]
 previsoes2 = [np.argmax(t) for t in previsoes]
